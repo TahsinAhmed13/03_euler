@@ -34,8 +34,8 @@ int problem5(int n)
         int r = ans % i; 
         if(r != 0)
         {
-            // next num that is divisible by i is r away 
-            ans += r; 
+            // next multiple of i is i - r away
+            ans += (i - r); 
             // recheck with all preceding values
             i = 0;  
         }
